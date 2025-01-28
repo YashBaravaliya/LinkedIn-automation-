@@ -32,7 +32,7 @@ def generate_and_save_draft():
     date_of_event = result["start_date"]
     print(f"today: {today}, date_of_event: {date_of_event}")
     if today != date_of_event:
-        return {"status": "there is no festival today auto trigeerd"}
+        return {"status": "there is no festival today"}
     else:
         post_content = post_generator.generate_post(result["title"])
     
